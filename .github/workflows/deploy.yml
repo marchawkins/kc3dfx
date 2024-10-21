@@ -19,7 +19,6 @@ jobs:
         PORT: ${{ secrets.PORT }}
         source: "."
         target: "/var/www/marchawkins_usr/data/www/kc3dfx.com"
-        timeout: 120s
 
     - name: Executing remote command
       uses: appleboy/ssh-action@master
