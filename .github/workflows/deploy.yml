@@ -19,12 +19,4 @@ jobs:
         PORT: ${{ secrets.PORT }}
         source: "."
         target: "/var/www/marchawkins_usr/data/www/kc3dfx.com"
-
-    - name: Executing remote command
-      uses: appleboy/ssh-action@master
-      with:
-        HOST: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.HOSTINGER_USERNAME }}
-        PASSWORD: ${{ secrets.HOSTINGER_PASSWORD }}
-        PORT: ${{ secrets.PORT }}
-        script: ls
+        debug: true
